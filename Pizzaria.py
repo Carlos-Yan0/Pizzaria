@@ -21,3 +21,5 @@ while True:
         case _:
             print("Opção invalída!!")
             limpa()
+
+# teste
