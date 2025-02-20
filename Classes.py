@@ -1,4 +1,5 @@
 pessoas = list()
+
 class registro:
     def __init__(self):
         self.usuario = ""
