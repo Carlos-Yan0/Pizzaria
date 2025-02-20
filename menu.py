@@ -9,16 +9,16 @@ def menuDePizzas(lista_pizzas):
 
     return valor
 
+def mainMenu():
+    pizzas = {
+        "Calabresa": 22,
+        "Pepperoni": 25.50,
+        "Quatro Queijos": 27,
+        "Frango com Catupiry": 26.50
+    }
 
-pizzas = {
-    "Calabresa": 22,
-    "Pepperoni": 25.50,
-    "Quatro Queijos": 27,
-    "Frango com Catupiry": 26.50
-}
+    lista_pizzas = list(pizzas.items())  # Converte o dicionário em uma lista de tuplas (sabor, preço)
 
-lista_pizzas = list(pizzas.items())  # Converte o dicionário em uma lista de tuplas (sabor, preço)
+    preco_total = sum(menuDePizzas(lista_pizzas) for _ in range(4))  # Executa o menu 4 vezes e usa sum() para acumular o total
 
-preco_total = sum(menuDePizzas(lista_pizzas) for _ in range(4))  # Executa o menu 4 vezes e usa sum() para acumular o total
-
-print(f"Total a pagar: R$ {preco_total}")
+    print(f"Total a pagar: R$ {preco_total}")

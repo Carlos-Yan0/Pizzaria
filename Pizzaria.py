@@ -1,10 +1,12 @@
 import Classes
 import os
+import menu
 
 def limpa():
     sistema = os.name
     if sistema == 'nt':  # Para Windows
         os.system('cls')
+
 
 registro = Classes.registro()
 login = Classes.login()
@@ -18,6 +20,8 @@ while True:
         case 2:
             while True:
                 login.verificar_conta()
+        case 3:
+            menu.mainMenu()
         case _:
             print("Opção invalída!!")
             limpa()
