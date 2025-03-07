@@ -8,8 +8,8 @@ def limpa():
         os.system('cls')
 
 
-registro = Classes.registro()
-login = Classes.login()
+registro = classes.registro()
+login = classes.login()
 
 while True:
     esc = int(input("Digite 1 para registrar-se e 2 para logar!\n"))
