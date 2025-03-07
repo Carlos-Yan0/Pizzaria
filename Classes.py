@@ -3,8 +3,10 @@ from tkinter import messagebox
 from datetime import date, datetime
 
 # Lista global para armazenar os usuários cadastrados
-usuarios = [{'usuario': 'Yan', 'senha': 'Rem.py3'}, {'usuario': 'Micael Rei Delas 2014', 'senha': 'ReiDelas.Exquecii'},
-            {'usuario': 'Luis_Antonella loves marry christmas', 'senha': 'Amor_Da_Antonella'}]
+usuarios = [
+    {'usuario': 'Yan', 'senha': 'Rem.py3'}, {'usuario': 'Micael Rei Delas 2014', 'senha': 'ReiDelas.Exquecii'},
+    {'usuario': 'Luis_Antonella loves marry christmas', 'senha': 'Amor_Da_Antonella'}
+]
 
 class Registro:
     def __init__(self, janela):
