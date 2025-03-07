@@ -65,7 +65,6 @@ class Tamanho(BaseJanela):
             print(f"Tamanho selecionado: {tamanho_selecionado}")
 
         # Esconde a janela de seleção de tamanho e abre a de sabores
-        self.janela.withdraw()
         nova_janela = Sabores()
         nova_janela.iniciar()  # Inicia a nova janela
 
