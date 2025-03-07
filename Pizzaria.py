@@ -1,4 +1,4 @@
-import Classes
+import classes
 import os
 import menu
 
